@@ -53,8 +53,8 @@ Go to https://discord.com/developers, create a new bot, then go to the Bot tab a
   
 **⚠️ Important: Use the API Token instead of the API Key for better security and restricted permissions. Keep your token and Zone ID confidential to prevent unauthorized access.**
 
-*4.* The variable ```LOG CHANNEL ID``` is a variable used to store logos for bots to create (record creation request, approval action, record deletion action)
-*5.* The variable ```ADMIN_ROLE_ID``` is the role with the highest authority in the bot (approve record, delete all other records, garbage collection, reminder), in this role you have the highest authority.
+*4.* **The variable ```LOG CHANNEL ID``` is a variable used to store logos for bots to create (record creation request, approval action, record deletion action)**
+*5.* **The variable ```ADMIN_ROLE_ID``` is the role with the highest authority in the bot (approve record, delete all other records, garbage collection, reminder), in this role you have the highest authority.**
 
 *Note: It is not required to be the Administrator role, any role, you just need to change it in Bot*
 
