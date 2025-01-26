@@ -28,8 +28,10 @@
 ### Add variables in the source code
 *1.* **SQLiteCloud database with variable ```SQLITECLOUD_CONNECTION_STRING```**
 Go to https://sqlitecloud.io, create an account and create a Project, then create a New Database, after creating it as {database_name}.sqlite. Then, click the Connect button and select the newly created Database and click the Copy button in the Connection String line and add that segment into the source code.
+
 *2.* **Discord Token with variable ```TOKEN```**
 Go to https://discord.com/developers, create a new bot, then go to the Bot tab and enable `Public Bot`, `Presence Intent`, `Server Members Intent` and `Message Content Intent`. Then scroll up and click Reset Token to get a new Token and add it to the source code.
+
 *3.* **Setting Up Cloudflare Variables (CF_API_KEY and ZONE_ID)**
 1. *Log in to Cloudflare Dashboard*
    - Go to [Cloudflare Dashboard](https://dash.cloudflare.com/) and log in to your account.
