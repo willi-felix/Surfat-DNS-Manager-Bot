@@ -26,5 +26,5 @@
    - Features dynamic schema adjustments and connection pooling.
 ## How to use
 ### Add variables in the source code
-*1.* SQLiteCloud database with variable ``SQLITECLOUD_CONNECTION_STRING```
+*1.* SQLiteCloud database with variable ```SQLITECLOUD_CONNECTION_STRING```
 Go to https://sqlitecloud.io, create an account and create a Project, then create a New Database, after creating it as {database_name}.sqlite. Then, click the Connect button and select the newly created Database and click the Copy button in the Connection String line
