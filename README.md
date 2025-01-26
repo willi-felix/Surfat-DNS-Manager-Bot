@@ -26,5 +26,35 @@
    - Features dynamic schema adjustments and connection pooling.
 ## How to use
 ### Add variables in the source code
-*1.* SQLiteCloud database with variable ```SQLITECLOUD_CONNECTION_STRING```
+*1.* **SQLiteCloud database with variable ```SQLITECLOUD_CONNECTION_STRING```**
 Go to https://sqlitecloud.io, create an account and create a Project, then create a New Database, after creating it as {database_name}.sqlite. Then, click the Connect button and select the newly created Database and click the Copy button in the Connection String line and add that segment into the source code.
+*2.* **Discord Token with variable ```TOKEN```**
+Go to https://discord.com/developers, create a new bot, then go to the Bot tab and enable `Public Bot`, `Presence Intent`, `Server Members Intent` and `Message Content Intent`. Then scroll up and click Reset Token to get a new Token and add it to the source code.
+*3.* **Setting Up Cloudflare Variables (CF_API_KEY and ZONE_ID)**
+1. *Log in to Cloudflare Dashboard*
+   - Go to [Cloudflare Dashboard](https://dash.cloudflare.com/) and log in to your account.
+2. *Select a Domain*
+   - Choose the domain you want to manage.
+3. *Retrieve API Key*
+   - Navigate to [API Tokens Page](https://dash.cloudflare.com/profile/api-tokens).  
+   - Click **Create Token**.  
+   - Select the **Edit Zone DNS** template (or customize permissions to allow only DNS editing for the desired domain).  
+   - Ensure the permissions are set to:  
+     - **Zone**: **Edit**  
+     - **Zone Resources**: **Include specific zone** and select the domain.  
+   - Click **Continue to Summary**, then **Create Token**.  
+   - Copy the generated token and assign it to the `CF_API_KEY` variable in your source code.
+4. *Retrieve Zone ID*
+   - Go to the **Overview** tab of the selected domain.  
+   - Scroll down to find the **Zone ID**.  
+   - Copy the Zone ID and assign it to the `ZONE_ID` variable in your source code.
+  
+**⚠️ Important: Use the API Token instead of the API Key for better security and restricted permissions. Keep your token and Zone ID confidential to prevent unauthorized access.**
+
+*4.* The variable ```LOG CHANNEL ID``` is a variable used to store logos for bots to create (record creation request, approval action, record deletion action)
+*5.* The variable ```ADMIN_ROLE_ID``` is the role with the highest authority in the bot (approve record, delete all other records, garbage collection, reminder), in this role you have the highest authority.
+*Note: It is not required to be the Administrator role, any role, you just need to change it in Bot*
+**⚠️ Important: Please provide it to people you trust because it may affect records in your Zone. Do not distribute this role to members of your Discord server**
+
+
+
