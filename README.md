@@ -60,6 +60,7 @@ Go to https://discord.com/developers, create a new bot, then go to the Bot tab a
 
 ### Launch
 *1.* Launch the bot to test its operation
+
 *2.* Launch bot on a server 24/7 (Recommended)
 
 *Suggest: [PylexNodes](https://pylexnodes.net), Free Python Hosting*
